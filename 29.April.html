@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            max-width: 60em;
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .column:nth-child(1) {
+            background-color: #FFD700; /* Gelb */
+        }
+
+        .column:nth-child(2) {
+            background-color: #00BFFF; /* Blau */
+        }
+
+        .column:nth-child(3) {
+            background-color: #FF6347; /* Rot */
+        }
+    </style>
+</head>
+<body>
+    <div class="column">
+        <p>One</p>
+    </div>
+    <div class="column">
+        <p>Two</p>
+    </div>
+    <div class="column">
+        <p>Three</p>
+    </div>
+</body>
+</html>
