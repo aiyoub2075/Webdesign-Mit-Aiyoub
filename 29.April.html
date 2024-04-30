@@ -3,43 +3,23 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            margin: 0;
-            max-width: 60em;
-            display: flex;
+        #navibereich {
+            background-color: #ffeda0;
+            padding: 5px 20px;
         }
 
-        .column {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .column:nth-child(1) {
-            background-color: #FFD700; /* Gelb */
-        }
-
-        .column:nth-child(2) {
-            background-color: #00BFFF; /* Blau */
-        }
-
-        .column:nth-child(3) {
-            background-color: #FF6347; /* Rot */
+        #navibereich li {
+            display: inline; /* Listenelemente nebeneinander anzeigen */
+            list-style-type: none; /* ohne Aufzählungspunkte */
+            margin-right: 10px; /* optional: Abstand zwischen den Links */
         }
     </style>
 </head>
 <body>
-    <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ratione qui nostrum incidunt nam adipisci sapiente repellendus vel et aperiam? Voluptate non quidem perspiciatis quae? Maiores quas nemo repudiandae nisi.</p>
-    </div>
-    <div class="column">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dignissimos iste ipsa dolorem numquam harum totam hic debitis ab nostrum velit nulla iusto ex a enim quo corporis! Officia, eos.</p>
-    </div>
-    <div class="column">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed fugiat, repellat eum similique neque soluta quo temporibus doloremque consequatur nesciunt sequi dolor omnis rerum dolorum amet, minima hic adipisci!</p>
-    </div>
+    <ul id="navibereich">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
 </body>
 </html>
