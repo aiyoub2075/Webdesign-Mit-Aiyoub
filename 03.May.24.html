@@ -1,10 +1,12 @@
 Aufgabe 1:
-Erstellt eine einfache Webseite mit einem Textparagraphen und zwei Buttons. Der erste Button soll die Textfarbe des Paragraphen ändern, der zweite die Hintergrundfarbe.
+Erstellt eine einfache Webseite mit einem Textparagraphen und zwei Buttons. 
+<br>
+Der erste Button soll die Textfarbe des Paragraphen ändern, der zweite die Hintergrundfarbe.
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hausaufgabe</title>
+    <title>Hausaufgabe1</title>
 </head>
 <body>
     <p id="my-paragraph">bla bla bla bla ,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
@@ -13,11 +15,88 @@ Erstellt eine einfache Webseite mit einem Textparagraphen und zwei Buttons. Der 
 
     <script>
         function changeTextColor() {
-            document.getElementById("my-paragraph").style.color = "red";
+            document.getElementById("my-paragraph").style.color = "green";
         }
 
         function changeBackgroundColor() {
-            document.body.style.backgroundColor = "lightblue";
+            document.body.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
+<br>
+<br>
+<br>
+Aufgabe 2:
+Fügt ein Bild und einen Button zur Webseite hinzu. 
+<br>
+Dieser Button soll das Bild ein- und ausblenden können. 
+Verwendet dafür CSS-Stile wie display oder visibility.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hausaufgabe2</title>
+    <style>
+      
+        #my-image {
+            width: 200px; 
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="my-paragraph">Hausaufgabe 2</p>
+    <button onclick="toggleImage()">Bild ein-/ausblenden</button>
+    <img id="my-image" src="Screenshot 2024-02-08 090927.png" alt="Ein Beispielbild">
+
+    <script>
+        function toggleImage() {
+            var image = document.getElementById("my-image");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+<br>
+<br>
+Aufgabe 3:
+Implementiert eine Funktion in JavaScript, die es ermöglicht, die Größe eines Div-Elements oder eines Bildes auf der Webseite zu verändern. 
+<br>
+Ein Button soll dabei die Größe vergrößern, der andere verkleinern.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hausaufgabe3</title>
+    <style>
+       
+        #my-div {
+            width: 300px; 
+            height: 300px; 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="my-div">Hausaufgabe 3 </div>
+    <button onclick="increaseSize()">Vergrößern</button>
+    <button onclick="decreaseSize()">Verkleinern</button>
+
+    <script>
+        var divElement = document.getElementById("my-div");
+
+        function increaseSize() {
+            divElement.style.width = (parseInt(divElement.style.width) + 500) + "px";
+            divElement.style.height = (parseInt(divElement.style.height) + 500) + "px";
+        }
+
+        function decreaseSize() {
+            divElement.style.width = (parseInt(divElement.style.width) - 50) + "px";
+            divElement.style.height = (parseInt(divElement.style.height) - 50) + "px";
         }
     </script>
 </body>
