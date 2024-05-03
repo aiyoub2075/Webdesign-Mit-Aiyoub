@@ -1,0 +1,24 @@
+Aufgabe 1:
+Erstellt eine einfache Webseite mit einem Textparagraphen und zwei Buttons. Der erste Button soll die Textfarbe des Paragraphen ändern, der zweite die Hintergrundfarbe.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hausaufgabe</title>
+</head>
+<body>
+    <p id="my-paragraph">bla bla bla bla ,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    <button onclick="changeTextColor()">Textfarbe ändern</button>
+    <button onclick="changeBackgroundColor()">Hintergrundfarbe ändern</button>
+
+    <script>
+        function changeTextColor() {
+            document.getElementById("my-paragraph").style.color = "red";
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+    </script>
+</body>
+</html>
