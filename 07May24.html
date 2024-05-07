@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hausaufgabe_07May</title>
+    <style>
+        /* Hier kannst du das Styling anpassen */
+        body {
+            font-family: Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #5bb974;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 200px;
+            background-color: #efabab;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button:hover{background-color: rgb(178, 178, 215);}
+        button{
+            cursor: pointer;
+            box-shadow: #f0f0f0;
+            border-radius: 5px;
+        }
+        input{border-radius: 10px;
+            width: 200px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen auf Aiyoub´s Hausaufgabe</h1>
+        <label for="yearInput">Gib ein Jahr ein(numbers only):</label>
+        <input type="number" id="yearInput">
+        <button onclick="checkSchaltjahr()">Jetzt Prüfen</button>
+    </div>
+
+    <script>
+        function checkSchaltjahr() {
+            let year = parseInt(document.getElementById('yearInput').value);
+            let isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+            alert(isLeapYear ? 'Das Jahr ' + year + ' ist ein Schaltjahr!' : 'Das Jahr ' + year + ' ist kein Schaltjahr.');
+        }
+    </script>
+</body>
+</html>
