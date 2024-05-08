@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aufgabe 1</title>
+    <script>
+      function aufgabe1(inputString) {
+        let reversedString = inputString.split("").reverse().join("");
+        console.log(reversedString);
+      }
+
+      // Beispielaufruf:
+      aufgabe1("Hallo, Welt!"); // Ausgabe: "!tleW ,ollaH"
+    </script>
+  </head>
+  <body>
+    <!-- Hier können Sie Ihre HTML-Inhalte hinzufügen -->
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zufällige Passwort Generator</title>
+    <style>
+      body {
+        font-family: cursive, Helvetica, sans-serif, sans-serif;
+        text-align: center;
+        background-color: rgb(157, 209, 209);
+        justify-content: center;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 28px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: #0074d9;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: -10px 10px 5px;
+      }
+      button:hover {
+        background-color: blueviolet;
+      }
+      #password-output {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aufgabe 2:</h1>
+    <h4>
+      Erstelle eine kleine Webseite, die auf Knopfdruck ein zufälliges Passwort
+      generiert und es auf der Konsole oder in einem p-Element ausgibt. Das
+      Passwort sollte eine Kombination aus Buchstaben, Zahlen und Sonderzeichen
+      enthalten und eine vom Benutzer festgelegte Länge haben.
+    </h4>
+
+    <button onclick="generatePassword()">zufällige Passwort generieren</button>
+    <p id="password-output"></p>
+
+    <script>
+      function generatePassword() {
+        let length = parseInt(prompt("Wie lange soll das Passwort sein?"));
+
+        let lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+        let uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let numberChars = "0123456789";
+        let specialChars = "!@#$%^&*()_+[]{}|;:,.<>?";
+
+        let allChars =
+          lowercaseChars + uppercaseChars + numberChars + specialChars;
+        let password = "";
+
+        for (let i = 0; i < length; i++) {
+          let randomIndex = Math.floor(Math.random() * allChars.length);
+          password += allChars.charAt(randomIndex);
+        }
+
+        document.getElementById(
+          "password-output"
+        ).textContent = `Hier ist die gewunschte Passwort: ${password}`;
+      }
+    </script>
+  </body>
+</html>
