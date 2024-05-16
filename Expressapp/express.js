@@ -8,12 +8,12 @@ const einkaufsliste = ['Aiyoub-Aufgabe2', 'Brot', 'Eier'];
 
 
 app.get('/hobbys', (req, res) => {
-    res.json(hobbys);
+    res.send(hobbys);
 });
 
 
 app.get('/einkaufsliste', (req, res) => {
-    res.json(einkaufsliste);
+    res.send(einkaufsliste);
 });
 app.listen(3000);
 
