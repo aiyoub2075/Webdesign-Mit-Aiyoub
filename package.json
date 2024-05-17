@@ -1,0 +1,24 @@
+{
+  "name": "aufgabe-2",
+  "version": "1.0.0",
+  "main": "02.May.24.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aiyoub",
+  "license": "ISC",
+  "description": "Hausaufgabe 10.May.24 Node lernen",
+  "dependencies": {
+    "express": "^4.19.2",
+    "random-string-generator": "^1.0.1",
+    "sillyname": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiyoub2075/Webdesign-Mit-Aiyoub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aiyoub2075/Webdesign-Mit-Aiyoub/issues"
+  },
+  "homepage": "https://github.com/aiyoub2075/Webdesign-Mit-Aiyoub#readme"
+}
