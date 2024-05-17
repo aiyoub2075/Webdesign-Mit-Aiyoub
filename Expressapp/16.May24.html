@@ -9,13 +9,37 @@
     <h1>Hier kannst du dich regisirieren:</h1>
     <p>Hausaufgabe von Aiyoub am 16.May.2024</p>
     <form action="/submit" method="POST">
-        <label for="email">email:</label>
+        <label for="email">E-mail:</label>
         <input type="text" name="email" required>
-        <label for="passwort">passwort:</label>
-        <input type="text" name="passwort" required>
-        <label for="name">name:</label>
+        <label for="passwort">Password:</label>
+        <input type="password" name="passwort" required>
+        <label for="name">Fullname:</label>
         <input type="text" name="name" required>
-        <input type="submit" value="Senden">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob">
+        <label for="Country">Country: </label>
+        <select name="Country" id="Country">
+            <option value="Germany">Germany</option>
+            <option value="Deutschland">Deutschland</option>
+            <option value="Almania">Almania</option>
+        </select>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" value="male" name="gender">
+        <label for="Female">Female</label>
+        <input type="radio" value="Female" name="gender">
+        <label for="Divers">Divers</label>
+        <input type="radio" value="Divers" name="gender">
+        <br>
+        <br>
+        <input type="submit" value="Registieren">
+        <br>
+        <br>
+        <input type="reset" value="clean all">
+        <br>
+
+
+
     </form>
 </body>
 </html>

@@ -41,6 +41,10 @@ app.post("/submit", (req, res) => {
   meineListe.push(req.body.name)
   meineListe.push(req.body.email)
   meineListe.push(req.body.passwort)
+  meineListe.push(req.body.dob)
+  meineListe.push(req.body.Country)
+  meineListe.push(req.body.gender)
+
     fs.appendFile("users.txt", meineListe.join("\n"), (err) => {
 
   })
